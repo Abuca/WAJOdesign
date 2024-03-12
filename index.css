@@ -1,0 +1,359 @@
+body {
+    background-color: black;
+    color: bisque;
+    background-image: radial-gradient(#e09304 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+}
+.navbar {
+    width: 100%;
+    height: 65px;
+    background: #fff;
+}
+.arma img {
+    width: 300px;
+    margin-top: 25px;
+    display: flex;
+}
+
+span {
+    color: #e09304;
+}
+
+/* HOMEPAGE SECTION */
+
+.two-columns {
+    padding-top: 150px;
+    width: 100%;
+}
+.two-columns .column {
+    max-width: 600px;
+    display: inline-block;
+    vertical-align: top;
+}
+.greeting {
+    font-family: monospace;
+    font-size: 30px;
+    padding-top: 15%;
+    line-height: 1em;
+}
+.name {
+    font-size: 90px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    position: relative;
+}
+.name::before {
+    content: "";
+    position: absolute;
+    left: 23%;
+    bottom: 75px;
+    width: 300px;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: #e09304;
+    z-index: -1;
+  }
+
+.mypic {
+    width: 100%;
+    max-width: 600px;
+    left: 100px;
+    position: relative;
+    margin-top: -3%;
+    transition: transform 0.5s ease;
+    transform: translateX(0px);
+    z-index: 99;
+}
+.mypic:hover
+{
+    transform: translateX(15px);
+}
+.homepage-buttons {
+    display: inline-flex;
+    visibility: hidden;
+}
+.homepage-buttons .btn {
+    margin: 10px;
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio {
+    background-color: black;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-inline: 50px;
+}
+.the-cards {
+    position: relative;
+    display: block;
+    padding: 15px;
+    max-width: 400px;
+    height: 500px;
+}
+
+.mobile-version {
+    display: none;
+}
+
+/* SERVICE SECTION */
+
+.services {
+    background-color: black;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-inline: 50px;
+    margin-top: 50px;
+}
+.services .intro {
+    margin-top: 10%;
+}
+.service-detail {
+    margin: 50px;
+    font-size: 20px;
+}
+.service-motto {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+.serviceImages{
+    display: inline-flex;
+}
+.serviceImages img {
+    width: 500px;
+    padding: 25px;
+    max-width: 100%;
+}
+.serviceImages p {
+    text-align: left;
+    font-weight: bold;
+    width: 90%;
+}
+.read-more {
+    border: #e09304 solid 2px;
+    color: #e09304;
+    border-radius: 10px;
+    padding: 8px;
+    text-decoration: none;
+    background-color: transparent;
+    margin-bottom: 10%;
+}
+.read-more:hover {
+    background-color: #e09304;
+    color: black;
+    transition: .5s;
+}
+.about-wajo-logo {
+    width: 400px;
+    position: relative;
+    left: -20%;
+}
+#feedback-form {
+    width: 50%;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 990px) {
+    body {
+        margin: 20px;
+        height: 100%;
+    }
+    .navbar {
+        height: auto;
+    }
+    .arma img{
+        margin-top: -5px;
+        display: flex;
+    }
+    #home {
+        height: 100vh;
+    }
+    .greeting {
+        font-size: 30px;
+    }
+    .name{
+        font-size: 50px;
+    }
+    .name::before {
+        content: "";
+        position: absolute;
+        left: 18%;
+        bottom: 55px;
+        width: 150px;
+        height: 12px;
+        transform: skew(-12deg) translateX(-50%);
+        background: #e09304;
+        z-index: -1;
+      }
+    .detail {
+        font-size: 20px;
+    }
+    #home .mypic {
+        display: none;
+    }
+    .mobile-version {
+        display: inline-block;
+    }
+    #portfolio  .container .row {
+        display: none;
+    }
+    #portfolio {
+        padding-inline: 0;
+    }
+    .services {
+        padding-inline: 0;
+    }
+    .service-detail {
+        font-size: 20px;
+    }
+    .service-motto {
+        font-size: 20px;
+    }
+    .cardbody {
+        display: inline-flex;
+    }
+    .serviceImages {
+        display: inline-block;
+    }
+    .about-wajo-logo {
+        left: auto;
+    }
+    #feedback-form {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/* Pasted from the old site */
+
+
+
+
+
+
+
+
+
+
+
+.sticky {
+    background: white;
+    position: fixed;
+    transition: 1s;
+}
+
+.collapse ul .nav-item .nav-link{
+    display: inline-block;
+    list-style: none;
+    margin-right: 50px;
+}
+
+/* .collapse ul .nav-item .nav-link {
+    text-transform: uppercase;
+    color: #e09304;
+    text-decoration: none;
+    font-weight: bold;
+}
+.collapse ul .nav-item .nav-link.active {
+    color: #e09304;
+}
+
+.collapse ul .nav-item .nav-link:hover {
+    color:#e09304;
+} */
+
+
+.nav-link {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+  
+.nav-link::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.nav-link:hover::after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.nav-link-designer {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 100px;
+    position: relative;
+}
+
+.nav-link-designer:hover {
+    text-shadow: 2px 2px 10px slategray;
+    font-weight: bolder;
+    transition: ease;
+}
+
+.about-button {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.about-button .nav-link {
+    color: brown;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.navbar-nav a{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}

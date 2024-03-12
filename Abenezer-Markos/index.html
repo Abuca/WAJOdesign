@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abenezer Markos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+          background-color: rgb(27, 76, 104);
+          background-image: radial-gradient(black 1px, transparent 0);
+          background-size: 40px 40px;
+          background-position: -19px -19px;
+          margin: 0px
+        }
+        .arma {
+          right: 100%;
+          padding-top: 30px;
+          width: 400px;
+          position: absolute;
+          transform: translate(-50%, -50%);
+        }
+        .greeting {
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size: 150px;
+        }
+        .two-columns {
+          width: 100%;
+        }
+        .two-columns .column{
+          max-width: 600px;
+          display: inline-block;
+          vertical-align: top;
+        }
+        .name {
+          font-size: 300%; 
+          color: white;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .role {
+          font-size: xx-large;
+          color: black;
+        }
+        .mypic
+        {
+          width: 100%;
+          width: 400px;
+          left: 150px;
+          position: relative;
+          transition: transform 0.5s ease;
+          transform: translateX(0px);
+          z-index: 99;
+        }
+        .mypic:hover
+        {
+        transform: translateX(15px);
+
+        }
+        @media only screen and (max-width: 768px) {
+          body {
+            margin: 20px;
+          }
+          .greeting {
+            font-size: 100px;
+          }
+          .name{
+            font-size: xx-large;
+          }
+          .role {
+            font-size: x-large;
+          }
+          .mypic {
+            width: 70%;
+            left: 15%;
+          }
+        }
+    </style>
+  </head>
+  <body>
+
+    <div>
+
+<!-- NAVBAR MENU -->
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- BODY CONTENT | UPPER -->
+
+          <div class="two-columns container" style="padding-top: 100px; color: aliceblue;">
+            <div class="column">
+                <div class="name">
+                    <p class="greeting">Hello<span style="color: #e09304;">.</span></p>
+                    <p style="font-size: larger;"><b>Abenezer</b> Markos</p>
+                    <p class="role">Freelance Graphic Designer</p>
+                </div>
+                <div class="detail">
+                    <p>
+                      I am <span style="color: #e09304;">Abenezer Markos</span>, a graphic designer originally from Ethiopia. I have been in the designing industry since 2017 with a strong passion on working to see a well-known country with the art industry. I refer to my self as an "always-ready-to-learn" creative and updated designer as I have kept learning tools and trends to grow more in my profession since I started.
+                    </p>
+                    
+                    <p>
+                      I am obsessed with a passion to cultivate more creative minds and to participate in creating a world full of gracious and admiring people. I am always ready to learn and grow from where I am in to the future that I hope my country to be; which is full of people who admire creative art.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <img class="mypic" src="img/png abuca.png" alt="">
+            </div>
+    
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
